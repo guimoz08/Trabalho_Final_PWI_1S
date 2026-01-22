@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Lumina Gran Hotel - Reservas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="dashboard.html">
+      <img src="imagens/logohotel.png" alt="Logo Lumina" width="60" class="me-5">
+      Lumina Gran Hotel
+    </a>
+
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="dashboard.html">Início</a>
+      <a class="nav-link" href="quartos.html">Quartos</a>
+      <a class="nav-link active" href="reservas.html">Reservas</a>
+      <a class="nav-link" href="gestao.html">Gestão</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- Mensagens -->
+  <div id="mensagem"></div>
+
+  <h3>Criar Reserva</h3>
+
+  <input id="cliente" class="form-control mb-2" placeholder="Nome do cliente">
+  <select id="quarto" class="form-select mb-2"></select>
+  <input type="date" id="inicio" class="form-control mb-2">
+  <input type="date" id="fim" class="form-control mb-2">
+
+  <button class="btn btn-primary mb-4" onclick="criarReserva()">Criar Reserva</button>
+
+  <h3>Reservas Existentes</h3>
+  <ul id="listaReservas" class="list-group"></ul>
+
+</div>
+
+<script src="js/dados.js"></script>
+<script src="js/reservas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
