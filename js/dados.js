@@ -4,7 +4,6 @@ const quartos = [
   { id: 3, tipo: "Suite", preco: 120 }
 ];
 
-// Carregar reservas do localStorage
 let reservas = JSON.parse(localStorage.getItem("reservas")) || [
   {
     id: 1,
@@ -22,7 +21,6 @@ let reservas = JSON.parse(localStorage.getItem("reservas")) || [
   }
 ];
 
-// Guardar no localStorage
 function guardarReservas() {
   localStorage.setItem("reservas", JSON.stringify(reservas));
 }
